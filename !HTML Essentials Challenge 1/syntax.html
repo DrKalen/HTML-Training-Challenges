@@ -1,0 +1,181 @@
+
+<!-- saved from url=(0190)https://www.linkedin-compilr.com/learning/editor/1/1dbcb7fa-fe9c-44fd-9467-fa7936f9a5a5/Chapter_03/03_09?_l=en_US&author=James%20Williamson&title=HTML%20Essential%20Training&token=LYNDA:V1PE -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="https://code.lynda.com/PLAYGROUNDS/1dbcb7fa-fe9c-44fd-9467-fa7936f9a5a5/resources/">--><base href=".">
+
+
+
+<title>HTML Syntax</title>
+<style rel="stylesheet" type="text/css">html, body {
+	background: #663399; /* Beccapurple */
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: rgb(107, 107, 132);
+}
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2.5% 2.5% 0;
+	background: white;
+	line-height: 1.8;
+}
+h1 {
+	font: 1.6em Verdana, Geneva, sans-serif;
+	margin-bottom: .4em;
+	color: rgb(83, 104, 138);
+}
+h2 {
+	font: 3.2em Georgia, "Times New Roman", Times, serif;
+	margin-bottom: .2em;
+}
+h3 {
+	font-size: 1.2em;
+}
+p {
+	margin-bottom: 1em;
+}
+a {
+	color: rgb(184, 126, 84);
+}
+a:hover {
+	color: rgb(120, 97, 55);
+}
+pre {
+	font-size: 1.4em;
+	color: white;
+	padding: .5em 1em;
+	border-left: 1em solid #A68048;
+	background: #666;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	width: 80%;
+}
+pre.wrong {
+	border-left-color: red;
+}
+pre.correct {
+	border-left-color: green;
+}
+dt {
+	font-style: italic;
+	font-size:1.2em;
+}
+dd {
+	margin-bottom: 1.4em;
+}
+table {
+	margin-top: 1em;
+}
+caption {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+	text-align: left;
+}
+td, th {
+	padding: 10px;
+}
+.center {
+	text-align: center;
+}
+header h2 {
+	padding-bottom: .2em;
+	border-bottom: 1px solid gray;
+}
+aside {
+	padding: 1em;
+	background:rgb(83, 104, 138);
+	color: white;
+	margin-bottom: 1em;
+}
+aside h4 {
+	color: white;
+}
+footer {
+	border-top: 1px solid gray;
+	text-align: center;
+	font-size: .8em;
+	line-height: 4em;
+	margin-top: 1em;
+}
+blockquote {
+	font-style: italic;
+}
+.flowRight {
+	float: right;
+	margin-left: 10px;
+}
+.flowLeft {
+	float: left;
+	margin-right: 10px;
+}
+</style>
+</head>
+<body>
+HTML Essential Training HTML Syntax
+<ul>
+    <li><a href="javascript:console.openFile(&#39;Chapter_03/03_09/intro.htm&#39;);" title="Introduction to HTML">Introduction to HTML</a></li>
+    <li><a href="javascript:console.openFile(&#39;Chapter_03/03_09/syntax.htm&#39;);" title="HTML syntax">HTML syntax</a></li>
+    <li><a href="javascript:console.openFile(&#39;Chapter_03/03_09/links.htm&#39;);" title="Creating links">Creating links</a></li>
+    <li><a href="javascript:console.openFile(&#39;Chapter_03/03_09/reference.htm&#39;);" title="HTML Reference">HTML reference</a></li>
+    <li><a href="javascript:console.openFile(&#39;Chapter_03/03_09/next.htm&#39;);" title="Next steps">Next steps</a></li>
+</ul>
+<p>Because HTML is often the people’s first experience with coding, there can be a fair amount of apprehension about learning it. Thankfully, HTML syntax is relatively simple and easy to learn. Most people can learn the basics of HTML and begin coding it within the same day.</p>
+A markup language
+<p>HTML is a markup language. That means that content on the page is “marked up” by tags which identify the content inside of them. A paragraph, for example, can be identified by placing the “&lt;p&gt;” opening tag prior to the paragraphs content and the “&lt;/p&gt;” closing tag at the end of a paragraph. The full paragraph would look like this:</p>
+<pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+<p>Tags consist of a left-angle bracket (&lt;) followed by a character or characters that identify the tag (the “p” for paragraph) and a closing right-angle bracket (&gt;). The closing tags for an element are exactly the same as an opening tag, except that a forward slash (/) will precede the tags characters.<br>
+    Although most elements require an opening and a closing tag, the closing tag is optional for some elements and not required at all for others. While there are exceptions to the rule, for the most part any element that contains content inside the opening and closing tags also requires a closing tag.</p>
+Basic document structure
+<p>The core of all HTML documents revolves around three basic tags. First, an html tag (&lt;html&gt;) is required to identify the document as an HTML file. Directly inside the html tag, you’ll find the head element (&lt;head&gt;). The head of a document is where you’ll find the document’s metadata, the document title, and links to external resources such as style sheets and scripts. A good way to think about the document’s head is that it doesn’t contain any of the page’s <em>visual</em> content rather it contains information about the document and the resources that help make the page work. Directly after the document’s head, you’ll find its body (&lt;body&gt;). The body is where you’ll find all of the page’s actual content. Headings, paragraphs, images, lists, tables, and other content will be located here. At its most basic, an HTML file would look like this:</p>
+<pre><code>
+&lt;html&gt;
+         &lt;head&gt;
+         &lt;/head&gt;
+         &lt;body&gt;
+         &lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+DOCTYPES
+<p>If you’ve looked at HTML pages before, you’ve probably noticed a long, somewhat intimidating tag just before the opening HTML tag. This is a doctype declaration and it’s a very important but often misunderstood component of HTML pages. Essentially, it tells the user agent parsing your page which version of HTML (or XHTML) to expect, so that it knows which syntax rules to use when rendering your page. The doctype you use should be based on the version of HTML you’re using to author the page. While that all sounds good in theory, in reality most of the time a doctype is simply triggering “standards-mode” rather than “quirks mode” (based on older browsers non-standard way of rendering pages). For that reason alone, all HTML documents should be preceded by a doctype declaration. For more information on doctypes, and the history behind them, check out Mark Pilgrim’s excellent section on doctypes from his <em>Dive Into HTML5</em> book. Here are some of the more common HTML doctypes:</p>
+HTML 4.0 transitional
+<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code></pre>
+XHTML 1.0 Transitional
+<pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code></pre>
+HTML5
+<pre><code>&lt;!DOCTYPE HTML&gt;</code>
+</pre>
+Element attributes
+<p>Some elements can be enhanced through the use of attributes. Attributes allow you to provide more information or additional functionality to the content. Attributes are added to the opening tag of an element and consist of two parts, the <strong>name</strong> and <strong>value</strong>. Although the syntax varies based on the version of HTML you’re using, it’s standard practice to put values within quotation marks.</p>
+<pre><code>&lt;h1 class=”headline”&gt;Article’s main headline&lt;/h1&gt;</code></pre>
+Replaced elements
+<p>Some HTML elements represent content that is replaced by an outside resource such as an image, form control, or a video file. These elements are referred to as <strong>replaced elements</strong> and usually have a predetermined width or height. In some cases the elements will have attributes that tell the browser where to find an external resource like an image or video.</p>
+<pre><code>&lt;img src=“photo.jpg” alt=“my awesome photo”&gt;&nbsp;</code></pre>
+Code structure
+<p>HTML documents create structure by nesting elements inside of one another. You might group a section of page content together by wrapping them within a &lt;div&gt; or &lt;section&gt; element, for example. When nesting one tag within another one, you must first close any child elements prior to closing any parent elements. <br>
+    This syntax, for example, would be <em>incorrect</em>:</p>
+<pre class="wrong"><code>&lt;p&gt;You must close all nested tags &lt;strong&gt;first!&lt;/p&gt;&lt;/strong&gt;</code></pre>
+<p>Rather, the correct syntax would be:</p>
+<pre class="correct"><code>&lt;p&gt;You must close all nested tags &lt;strong&gt;first!&lt;/strong&gt;&lt;/p&gt;</code></pre>
+<p>HTML also has specific rules about which elements can be nested within other elements. A paragraph (&lt;p&gt;) for example, can’t be nested inside a heading (&lt;h1&gt;). &nbsp;For the most part, these rules are based around the type of content the tag represents. HTML 4 has two basic types of content: <strong>block</strong> and <strong>inline</strong>. Block-level elements typically occupy their own line within a document, usually stacking one on top of each other in the order they appear in your code. Inline-level elements can appear within the flow of block level elements. Elements like strong (&lt;strong&gt;), bold (&lt;b&gt;), emphasis (&lt;em&gt;), italic (&lt;i&gt;), and span (&lt;span&gt;) are always found inside block-level elements. <br>
+    HTML5, on the other hand, expands the concept of content types to seven different categories of content, with some elements belonging to multiple categories. This replaces the concept of block-level and inline-level elements and adds some additional nesting syntax rules. For the most part, the rules around nesting elements make sense and are fairly easy to pick up. You should be prepared, however, for it to take some time before you fully understand all of the rules surrounding nesting elements. One way to making sure to your code is structured properly is to validate your code through a service like the W3C’s Markup Validation service.</p>
+Commenting code
+<p>Often it is helpful to leave notes to yourself or other developers within your code. Perhaps you want to remind yourself what a certain script does, or remind a co-worker how to properly structure specific content. To do this, you’ll use comments. Comments should appear on their own line, and typically appear directly before or after the code they refer to. Comments begin with a left-angle bracket, an exclamation point, and two hyphens (&lt;!--) and end with two hyphens followed by a right-angle bracket (--&gt;).</p>
+Comment syntax:
+<pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+Using special characters
+<p>Certain characters are reserved in HTML, meaning that you shouldn’t use them outside of their specific purpose. The angle brackets, for example, are reserved for tags, and using them anywhere outside of a tag could cause parsing errors in browsers. However, you can still use these reserved characters and other special characters or symbols by using what is known as a <strong>named character entity</strong>. These special codes tell the user agent to replace the entity code with a specific character. These entities begin with an ampersand (&amp;) followed by the entity name and end with a semicolon (;). To display an ampersand, for example, you would type <strong>&amp;amp;</strong> in place of the actual ampersand. You can find named character entity lists within the HTML specifications, although the format for them can be a bit hard to read. You can also find a useful list of character entities on the <a href="javascript:console.openFile(&#39;Chapter_03/03_09/reference.htm#named&#39;);">HTML Reference</a> page, and a more comprehensive list on Wikipedia.</p>
+<p>© lynda.com | follow me and lynda.com on Twitter! @jameswillweb @lyndadotcom</p>
+
+
+</body></html>
