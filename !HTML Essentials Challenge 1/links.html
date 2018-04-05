@@ -1,167 +1,103 @@
 
-<!-- saved from url=(0190)https://www.linkedin-compilr.com/learning/editor/1/1dbcb7fa-fe9c-44fd-9467-fa7936f9a5a5/Chapter_03/03_09?_l=en_US&author=James%20Williamson&title=HTML%20Essential%20Training&token=LYNDA:V1PE -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="https://code.lynda.com/PLAYGROUNDS/1dbcb7fa-fe9c-44fd-9467-fa7936f9a5a5/resources/">--><base href=".">
-
-
-
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <title>Creating Links</title>
-<style rel="stylesheet" type="text/css">html, body {
-	background: #663399; /* Beccapurple */
-	margin: 0;
-}
-h1, h2, h3, h4, h5, h6, p {
-	margin: 0;
-	padding: 0;
-}
-h1, h2, h3, h4, h5, h6 {
-	color: rgb(107, 107, 132);
-}
-body {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 100%;
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 2.5% 2.5% 0;
-	background: white;
-	line-height: 1.8;
-}
-h1 {
-	font: 1.6em Verdana, Geneva, sans-serif;
-	margin-bottom: .4em;
-	color: rgb(83, 104, 138);
-}
-h2 {
-	font: 3.2em Georgia, "Times New Roman", Times, serif;
-	margin-bottom: .2em;
-}
-h3 {
-	font-size: 1.2em;
-}
-p {
-	margin-bottom: 1em;
-}
-a {
-	color: rgb(184, 126, 84);
-}
-a:hover {
-	color: rgb(120, 97, 55);
-}
-pre {
-	font-size: 1.4em;
-	color: white;
-	padding: .5em 1em;
-	border-left: 1em solid #A68048;
-	background: #666;
-	white-space: pre-wrap;
-	white-space: -moz-pre-wrap;
-	white-space: -pre-wrap;
-	white-space: -o-pre-wrap;
-	word-wrap: break-word;
-	width: 80%;
-}
-pre.wrong {
-	border-left-color: red;
-}
-pre.correct {
-	border-left-color: green;
-}
-dt {
-	font-style: italic;
-	font-size:1.2em;
-}
-dd {
-	margin-bottom: 1.4em;
-}
-table {
-	margin-top: 1em;
-}
-caption {
-	margin: 0;
-	padding: 0;
-	margin-bottom: 1em;
-	text-align: left;
-}
-td, th {
-	padding: 10px;
-}
-.center {
-	text-align: center;
-}
-header h2 {
-	padding-bottom: .2em;
-	border-bottom: 1px solid gray;
-}
-aside {
-	padding: 1em;
-	background:rgb(83, 104, 138);
-	color: white;
-	margin-bottom: 1em;
-}
-aside h4 {
-	color: white;
-}
-footer {
-	border-top: 1px solid gray;
-	text-align: center;
-	font-size: .8em;
-	line-height: 4em;
-	margin-top: 1em;
-}
-blockquote {
-	font-style: italic;
-}
-.flowRight {
-	float: right;
-	margin-left: 10px;
-}
-.flowLeft {
-	float: left;
-	margin-right: 10px;
-}
-</style>
+<link href="_css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-HTML Essential Training Creating Links
+<h1>HTML Essential Training</h1>
+<h2>Creating Links</h2>
 <ul>
-    <li><a href="javascript:console.openFile(&#39;Chapter_03/03_09/intro.htm&#39;);" title="Introduction to HTML">Introduction to HTML</a></li>
-    <li><a href="javascript:console.openFile(&#39;Chapter_03/03_09/syntax.htm&#39;);" title="HTML syntax">HTML syntax</a></li>
-    <li><a href="javascript:console.openFile(&#39;Chapter_03/03_09/links.htm&#39;);" title="Creating links">Creating links</a></li>
-    <li><a href="javascript:console.openFile(&#39;Chapter_03/03_09/reference.htm&#39;);" title="HTML Reference">HTML reference</a></li>
-    <li><a href="javascript:console.openFile(&#39;Chapter_03/03_09/next.htm&#39;);" title="Next steps">Next steps</a></li>
+    <li><a href="intro.htm" title="Introduction to HTML">Introduction to HTML</a></li>
+    <li><a href="syntax.htm" title="HTML syntax">HTML syntax</a></li>
+    <li><a href="links.htm" title="Creating links">Creating links</a></li>
+    <li><a href="reference.htm" title="HTML Reference">HTML reference</a></li>
+    <li><a href="next.htm" title="Next steps">Next steps</a></li>
 </ul>
 <p>Perhaps the most important aspect of HTML is the ability to link from one document to another. This is the basic concept underlying   the web and without this functionality the World Wide Web would not exist. </p>
-Link syntax
-<p>Creating links is relatively straightforward, and the syntax provides a lot of flexibility in where and how links are applied. To create a link, you’ll use the anchor element (&lt;a&gt;) to wrap the content you wish to convert to a link.&nbsp; Attributes inside the anchor tag tell the browser where the page is linking to, or point to an external resource that the browser should download.<br>
+<h3>Link syntax</h3>
+<p>Creating links is relatively straightforward, and the syntax provides a lot of flexibility in where and how links are applied. To create a link, you&rsquo;ll use the anchor element (&lt;a&gt;) to wrap the content you wish to convert to a link.&nbsp; Attributes inside the anchor tag tell the browser where the page is linking to, or point to an external resource that the browser should download.<br>
     Take the following link example:</p>
-<pre>&lt;a href=”syntax.htm” title=”learn more about syntax”&gt;HTML syntax&lt;/a&gt;</pre>
-<p>Here the text “HTML syntax” would now appear as a clickable link. The <b>href</b> attribute tells the browser how to <em>resolve</em> the link; that is where the user should be directed when the link is clicked. The optional <b>title</b> attribute provides a description of the link and is helpful in making the link more accessible.</p>
-Link types
+<pre>&lt;a href=&rdquo;syntax.htm&rdquo; title=&rdquo;learn more about syntax&rdquo;&gt;HTML syntax&lt;/a&gt;</pre>
+<p>Here the text &ldquo;HTML syntax&rdquo; would now appear as a clickable link. The <b>href</b> attribute tells the browser how to <em>resolve</em> the link; that is where the user should be directed when the link is clicked. The optional <b>title</b> attribute provides a description of the link and is helpful in making the link more accessible.</p>
+<h3>Link types</h3>
 <p>There are three basic types of link: <b>absolute</b>, <b>site-root relative</b>, and <b>document relative</b>. Each of these types refers to the value of the <b>href</b> attribute, which directs how the browser should resolve a link once the link has been clicked. </p>
-Absolute links
-<p>These links contain the entire URL necessary to resolve a link, including the protocol. This is usually done for external links, which are links to pages outside of the current site. Here’s an example of an absolute link:</p>
-<pre>&lt;a href=”http://www.lynda.com” title=”You can learn it at lynda.com!”&gt;lynda.com&lt;/a&gt;</pre>
-Document relative links
+<h4>Absolute links</h4>
+<p>These links contain the entire URL necessary to resolve a link, including the protocol. This is usually done for external links, which are links to pages outside of the current site. Here&rsquo;s an example of an absolute link:</p>
+<pre>&lt;a href=&rdquo;http://www.lynda.com&rdquo; title=&rdquo;You can learn it at lynda.com!&rdquo;&gt;lynda.com&lt;/a&gt;</pre>
+<h4>Document relative links</h4>
 <p>These links are commonly used to navigate internally within a site. For example, if you were on the home page of your site, and wanted to navigate to the contact page, you simply provide the path from the home page to the contact page for the <b>href</b> value. Doing this requires you to understand the directory structure of your site, and when you need to navigate into, or out of, folders. Take the following example:</p>
-<pre>&lt;a href=”contact.htm” title=”our contact page”&gt;Contact us&lt;/a&gt;</pre>
+<pre>&lt;a href=&rdquo;contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>
 <p>This link assumes that the contact page and the current page are in the same directory. If the contact page were located in a directory below the current page, the link would look like this:</p>
-<pre>&lt;a href=”resources/contact.htm” title=”our contact page”&gt;Contact us&lt;/a&gt;</pre>
-<p>This assumes the contact page is in a directory titled “resources” and is one level below the current page. To move <b>out</b> of a directory, you precede the page with the “../” characters. In this case of our contact link it would look like this:</p>
-<pre>&lt;a href=”../contact.htm” title=”our contact page”&gt;Contact us&lt;/a&gt;</pre>
-<p> This link would move up from the current directory and find the contact.htm page in the parent directory. You can use as many of these “../” as you need to move up and properly resolve the link.</p>
-Site-Root Relative Links
-<p> These are similar to document relative links, but start at the root folder for the site and then move down through directories to the desired page. Unlike document relative links, which depend on the current location of the page to properly resolve links, site-root relative links are written the same no matter the current location within your site. All links are preceded by a forward slash (/) that refers to the root directory. Here’s an example:</p>
-<pre>&lt;a href=”/contact.htm” title=”our contact page”&gt;Contact us&lt;/a&gt;</pre>
-<p> In this example, the link is resolved by going directly into the site’s root folder and finding the contact page. If the contact page were located deeper within the site, the link would look like this:</p>
-<pre>&lt;a href=”/resources/contact.htm” title=”our contact page”&gt;Contact us&lt;/a&gt;</pre>
-Fragment identifiers
-<p>Occasionally you’ll want a link to refer to a specific location within a page. This can be done using a special kind of link called a fragment identifier. These links point to elements with a specific <b>ID</b> attribute. Let’s say, for example, you have a long list of <b>FAQs</b> on a page organized by categories and you had a heading at the top of each category. If you assigned each heading an ID attribute, you could use those IDs to create a links that jump to specific categories. For example, you could format the Camping FAQs heading like this:</p>
-<pre>&lt;h2 id=”camp”&gt;Camping&lt;/h2&gt;</pre>
+<pre>&lt;a href=&rdquo;resources/contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>
+<p>This assumes the contact page is in a directory titled &ldquo;resources&rdquo; and is one level below the current page. To move <b>out</b> of a directory, you precede the page with the &ldquo;../&rdquo; characters. In this case of our contact link it would look like this:</p>
+<pre>&lt;a href=&rdquo;../contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>
+<p> This link would move up from the current directory and find the contact.htm page in the parent directory. You can use as many of these &ldquo;../&rdquo; as you need to move up and properly resolve the link.</p>
+<h4>Site-Root Relative Links</h4>
+<p> These are similar to document relative links, but start at the root folder for the site and then move down through directories to the desired page. Unlike document relative links, which depend on the current location of the page to properly resolve links, site-root relative links are written the same no matter the current location within your site. All links are preceded by a forward slash (/) that refers to the root directory. Here&rsquo;s an example:</p>
+<pre>&lt;a href=&rdquo;/contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>
+<p> In this example, the link is resolved by going directly into the site&rsquo;s root folder and finding the contact page. If the contact page were located deeper within the site, the link would look like this:</p>
+<pre>&lt;a href=&rdquo;/resources/contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>
+<h4>Fragment identifiers</h4>
+<p>Occasionally you&rsquo;ll want a link to refer to a specific location within a page. This can be done using a special kind of link called a fragment identifier. These links point to elements with a specific <b>ID</b> attribute. Let&rsquo;s say, for example, you have a long list of <b>FAQs</b> on a page organized by categories and you had a heading at the top of each category. If you assigned each heading an ID attribute, you could use those IDs to create a links that jump to specific categories. For example, you could format the Camping FAQs heading like this:</p>
+<pre>&lt;h2 id=&rdquo;camp&rdquo;&gt;Camping&lt;/h2&gt;</pre>
 <p> Elsewhere on the page you could link to this section by creating the following link:</p>
-<pre>&lt;a href=”#camp”&gt;Learn more about camping&lt;/a&gt;</pre>
+<pre>&lt;a href=&rdquo;#camp&rdquo;&gt;Learn more about camping&lt;/a&gt;</pre>
 <p> Note the hash symbol (#) prior to the ID value. This tells the browser to look for an element with the ID value that follows.You can link to fragment identifiers on external pages as well. Simply append the fragment identifier to the URL and the link will jump to not only to that page, but that specific section as well.</p>
-<pre>&lt;a href=”faq.htm#camp”&gt;Read our FAQ on camping.&lt;/a&gt;</pre>
-<p>© lynda.com | follow me and lynda.com on Twitter! @jameswillweb @lyndadotcom</p>
-
-
-</body></html>
+<pre>&lt;a href=&rdquo;faq.htm#camp&rdquo;&gt;Read our FAQ on camping.&lt;/a&gt;</pre>
+<p>&copy; lynda.com | follow me and lynda.com on Twitter! @jameswillweb @lyndadotcom</p>
+</body>
+</html>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Creating Links</title>
+<link href="_css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>HTML Essential Training</h1>
+<h2>Creating Links</h2>
+<ul>
+    <li><a href="intro.htm" title="Introduction to HTML">Introduction to HTML</a></li>
+    <li><a href="syntax.htm" title="HTML syntax">HTML syntax</a></li>
+    <li><a href="links.htm" title="Creating links">Creating links</a></li>
+    <li><a href="reference.htm" title="HTML Reference">HTML reference</a></li>
+    <li><a href="next.htm" title="Next steps">Next steps</a></li>
+</ul>
+<p>Perhaps the most important aspect of HTML is the ability to link from one document to another. This is the basic concept underlying   the web and without this functionality the World Wide Web would not exist. </p>
+<h3>Link syntax</h3>
+<p>Creating links is relatively straightforward, and the syntax provides a lot of flexibility in where and how links are applied. To create a link, you&rsquo;ll use the anchor element (&lt;a&gt;) to wrap the content you wish to convert to a link.&nbsp; Attributes inside the anchor tag tell the browser where the page is linking to, or point to an external resource that the browser should download.<br>
+    Take the following link example:</p>
+<pre>&lt;a href=&rdquo;syntax.htm&rdquo; title=&rdquo;learn more about syntax&rdquo;&gt;HTML syntax&lt;/a&gt;</pre>
+<p>Here the text &ldquo;HTML syntax&rdquo; would now appear as a clickable link. The <b>href</b> attribute tells the browser how to <em>resolve</em> the link; that is where the user should be directed when the link is clicked. The optional <b>title</b> attribute provides a description of the link and is helpful in making the link more accessible.</p>
+<h3>Link types</h3>
+<p>There are three basic types of link: <b>absolute</b>, <b>site-root relative</b>, and <b>document relative</b>. Each of these types refers to the value of the <b>href</b> attribute, which directs how the browser should resolve a link once the link has been clicked. </p>
+<h4>Absolute links</h4>
+<p>These links contain the entire URL necessary to resolve a link, including the protocol. This is usually done for external links, which are links to pages outside of the current site. Here&rsquo;s an example of an absolute link:</p>
+<pre>&lt;a href=&rdquo;http://www.lynda.com&rdquo; title=&rdquo;You can learn it at lynda.com!&rdquo;&gt;lynda.com&lt;/a&gt;</pre>
+<h4>Document relative links</h4>
+<p>These links are commonly used to navigate internally within a site. For example, if you were on the home page of your site, and wanted to navigate to the contact page, you simply provide the path from the home page to the contact page for the <b>href</b> value. Doing this requires you to understand the directory structure of your site, and when you need to navigate into, or out of, folders. Take the following example:</p>
+<pre>&lt;a href=&rdquo;contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>
+<p>This link assumes that the contact page and the current page are in the same directory. If the contact page were located in a directory below the current page, the link would look like this:</p>
+<pre>&lt;a href=&rdquo;resources/contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>
+<p>This assumes the contact page is in a directory titled &ldquo;resources&rdquo; and is one level below the current page. To move <b>out</b> of a directory, you precede the page with the &ldquo;../&rdquo; characters. In this case of our contact link it would look like this:</p>
+<pre>&lt;a href=&rdquo;../contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>
+<p> This link would move up from the current directory and find the contact.htm page in the parent directory. You can use as many of these &ldquo;../&rdquo; as you need to move up and properly resolve the link.</p>
+<h4>Site-Root Relative Links</h4>
+<p> These are similar to document relative links, but start at the root folder for the site and then move down through directories to the desired page. Unlike document relative links, which depend on the current location of the page to properly resolve links, site-root relative links are written the same no matter the current location within your site. All links are preceded by a forward slash (/) that refers to the root directory. Here&rsquo;s an example:</p>
+<pre>&lt;a href=&rdquo;/contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>
+<p> In this example, the link is resolved by going directly into the site&rsquo;s root folder and finding the contact page. If the contact page were located deeper within the site, the link would look like this:</p>
+<pre>&lt;a href=&rdquo;/resources/contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>
+<h4>Fragment identifiers</h4>
+<p>Occasionally you&rsquo;ll want a link to refer to a specific location within a page. This can be done using a special kind of link called a fragment identifier. These links point to elements with a specific <b>ID</b> attribute. Let&rsquo;s say, for example, you have a long list of <b>FAQs</b> on a page organized by categories and you had a heading at the top of each category. If you assigned each heading an ID attribute, you could use those IDs to create a links that jump to specific categories. For example, you could format the Camping FAQs heading like this:</p>
+<pre>&lt;h2 id=&rdquo;camp&rdquo;&gt;Camping&lt;/h2&gt;</pre>
+<p> Elsewhere on the page you could link to this section by creating the following link:</p>
+<pre>&lt;a href=&rdquo;#camp&rdquo;&gt;Learn more about camping&lt;/a&gt;</pre>
+<p> Note the hash symbol (#) prior to the ID value. This tells the browser to look for an element with the ID value that follows.You can link to fragment identifiers on external pages as well. Simply append the fragment identifier to the URL and the link will jump to not only to that page, but that specific section as well.</p>
+<pre>&lt;a href=&rdquo;faq.htm#camp&rdquo;&gt;Read our FAQ on camping.&lt;/a&gt;</pre>
+<p>&copy; lynda.com | follow me and lynda.com on Twitter! @jameswillweb @lyndadotcom</p>
+</body>
+</html>
